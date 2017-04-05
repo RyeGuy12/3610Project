@@ -75,7 +75,7 @@
         </div>
         <div class="row form-group col-md-12">
             <label for="exampleInputFile">Upload Folder</label>
-            <input type="file" id="exampleInputFile">
+            <input type="file" id="exampleInputFile" (change)="onChange($event)" webkitdirectory directory multiple>
             <p class="help-block" style="color:red;">Make sure each file in the folder has the same extension.</p>
         </div>
         <div class="row form-group col-md-6">
@@ -87,7 +87,7 @@
 <div class="col-md-12 geolocator" style="padding-top: 40px;">
     <div class="row form-group col-md-12">
         <label for="exampleInputFile">Upload Folder</label>
-        <input type="file" id="exampleInputFile">
+        <input type="file" id="exampleInputFile" (change)="onChange($event)" webkitdirectory directory multiple>
     </div>
     <div class="list-group col-md-6">
         <a href="#" class="list-group-item disabled">All Cities</a>
