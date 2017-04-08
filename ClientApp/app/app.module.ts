@@ -6,11 +6,14 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
-import {UploadService } from './app.service'
+import { UploadService } from './app.service';
+import { uploadService } from './upload.service';
+import { APP_CONFIG, AppConfig } from './app.config';
+
 
 @NgModule({
     bootstrap: [AppComponent],
-    providers: [UploadService],
+    providers: [UploadService, uploadService, { provide: APP_CONFIG, useValue: AppConfig }],
     declarations: [
         AppComponent,
         NavMenuComponent,

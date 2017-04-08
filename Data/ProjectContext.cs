@@ -13,13 +13,11 @@ namespace Angular2.Data
         {
 
         }
-        public DbSet<Audio> Audios { get; set; }
-        public DbSet<Photo> Photos { get; set; }
+        public DbSet<Image> Image { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Audio>().ToTable("Audio");
-            modelBuilder.Entity<Photo>().ToTable("Photo");
+            modelBuilder.Entity<Image>().ToTable("Image");
         }
     }
 }

@@ -15,7 +15,7 @@
     <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and the <code>webpack</code> build tool produces minified static CSS and JavaScript files.</li>
 </ul>-->
 
-<!--<style>
+<style>
     #map {
         height: 400px;
         width: 50%;
@@ -52,7 +52,7 @@
           map: map
         });
       }
-</script>-->
+</script>
 <div clas="col-md-6">
 </div>
 <div class="btn-group-vertical col-md-3" role="group" aria-label="..." style="padding-top: 80px;">
@@ -75,7 +75,7 @@
         </div>
         <div class="row form-group col-md-12">
             <label for="exampleInputFile">Upload Folder</label>
-            <input type="file" id="exampleInputFile" (change)="onChange($event)" webkitdirectory directory multiple>
+            
             <p class="help-block" style="color:red;">Make sure each file in the folder has the same extension.</p>
         </div>
         <div class="row form-group col-md-6">
@@ -87,7 +87,10 @@
 <div class="col-md-12 geolocator" style="padding-top: 40px;">
     <div class="row form-group col-md-12">
         <label for="exampleInputFile">Upload Folder</label>
-        <input type="file" id="exampleInputFile" (change)="onChange($event)" webkitdirectory directory multiple>
+        <!--<input type="file" #fileInput webkitdirectory directory multiple />
+        <button class="btn btn-primary btn-lg col-xs-3" on-click="addFile()">Run Test</button>-->
+        <input type="file" #fileInput webkitdirectory directory multiple />
+        <button class="btn btn-primary btn-lg col-xs-3" on-click="addFile()">Run Test</button>
     </div>
     <div class="list-group col-md-6">
         <a href="#" class="list-group-item disabled">All Cities</a>

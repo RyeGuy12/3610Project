@@ -44,3 +44,12 @@ export class UploadService {
         });
     }
 }
+
+export interface Photo {
+    lastModified: string;
+    lastModifiedDate: string;
+    name: string;
+    size: number;
+    type: string;
+    webkitRelativePath: string;
+}

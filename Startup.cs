@@ -67,7 +67,7 @@ namespace Angular2
                     name: "spa-fallback",
                     defaults: new { controller = "Home", action = "Index" });
             });
-            DbInitializer.Initialize(context);
+            
         }
     }
 }
